@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600i|Roboto:700');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header, footer ,h1, h2, h3 ,h4 ,h5 ,h6{
+	font-family: 'Roboto', sans-serif;
+}
+
+section ,p{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor_grid{
+    display: grid;
+    grid-template-columns: repeat(6,minmax(auto,auto));
+    grid-template-rows: repeat(6,auto);
+	grid-template-areas:
+						"head head head head head head"
+						"seccion seccion seccion seccion seccion seccion"
+						"seccion seccion seccion seccion seccion seccion"
+						"seccion2 seccion2 seccion2 seccion2 seccion2 seccion2"
+						"subfooter subfooter subfooter subfooter subfooter subfooter"
+						"footer footer footer footer footer footer";
+}
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+.contenedor_grid .header{
+	grid-area: head;
+}
+
+.header{
+	background-color:#262626;
+	color:#298E43;
+}
+
+.header .grid_header{
+	display: grid;
+	grid-gap:5px;
+	grid-row-gap: 10px;
+	grid-template-columns: repeat(2,minmax(500px,auto));
+	grid-template-rows: repeat(2,auto);
+	grid-template-areas:"logo barra"
+						"titulo titulo"
+						"descri descri"
+						"boton boton"
+}						
+
+.grid_header .logo{
+	grid-area:logo;
+	font-size: 25px;
+	padding: 10px 20px;
+}
+
+.grid_header .logo:hover{
+	color: white;
+	cursor: pointer;
+	width: 40%;
+}
+
+/*---------------------------------------------*/
+/*---------------------------------------------*/
+/*---------------------------------------------*/
+
+.grid_header .nav_header{
+	grid-area:barra;
+	display: flex;
+	justify-content: right;
+}
+
+/*---------------------------------------------*/
+/*---------------------------------------------*/
+/*---------------------------------------------*/
+
+.grid_header .titulo{
+	grid-area:titulo;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-size:30px;
+	margin-top:10%;
+}
+.grid_header .frase{
+	grid-area:descri;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-size: 18px;
+}
+.grid_header .boton{
+	grid-area:boton;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-top:5%;
+	margin-bottom: 10%;
+}
+
+.grid_header .boton>div{
+	border-style:solid;
+	padding: 10px 20px;
+	font-size: 18px;
+}
+
+.grid_header .boton>div:hover{
+	background-color: white;
+	transition: all 0.3s;
+	cursor: pointer;
+}

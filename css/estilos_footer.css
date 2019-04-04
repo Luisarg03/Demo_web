@@ -1,0 +1,13 @@
+.contenedor_grid .footer{
+	grid-area: footer;
+}
+
+.footer{
+	color:white;
+	background-color: #262626;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	font-size: 18px;
+}

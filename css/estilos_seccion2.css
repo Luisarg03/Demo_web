@@ -1,0 +1,201 @@
+.section2{
+    grid-area: seccion2;
+}
+
+.section2 .grid_section2{
+    background-color: F4F4F4;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    grid-column-gap: 3%;
+    grid-template-areas:"descr ico1 ico2"
+                        "descr ico3 ico4";
+}
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+
+.grid_section2 .section2_descr{
+    display: block;
+    grid-area: descr;
+    padding: 10px 20px;
+    margin-bottom: 10%;
+}
+
+.grid_section2 .section2_descr>h4,p{
+    margin-top:8%;
+}
+
+.section2_descr>h4{
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.section2_descr>h2{
+    font-size: 30px;
+}
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+
+.grid_section2 .ico1{
+    margin-top: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid_section2 .ico1 .icono{
+    border-style: solid;
+    border-color:F4F4F4;
+    color:green;
+    font-size: 60px;
+    padding: 30px 40px;
+}
+
+.grid_section2 .ico1 .icono:hover{
+    color:rgba(1, 221, 1, 0.561);
+    cursor: pointer;
+}
+
+.grid_section2 .ico1 .ico_descr>h4{
+    font-size: 20px;
+    width: 35%;
+    height: 30px;
+}
+
+.grid_section2 .ico1 .ico_descr>h4:hover{
+    border-bottom:3px solid black;
+    width: 30%;
+    cursor: pointer;
+}
+
+.grid_section2 .ico1 .ico_descr{
+    margin-right: 2%;
+    text-align: left;
+}
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+
+.grid_section2 .ico2{
+    margin-top: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid_section2 .ico2 .icono{
+    border-style:solid;
+    border-color:F4F4F4;
+    color: chocolate;
+    font-size: 60px;
+    padding: 30px 40px;
+}
+
+.grid_section2 .ico2 .icono:hover{
+    color:orange;
+    cursor: pointer;
+}
+
+.grid_section2 .ico2 .ico_descr>h4{
+    font-size: 20px;
+    width: 30%;
+    height: 30px;
+}
+
+.grid_section2 .ico2 .ico_descr>h4:hover{
+    border-bottom:3px solid black;
+    cursor: pointer;
+}
+
+.grid_section2 .ico2 .ico_descr{
+    margin-right: 2%;
+    text-align: left;
+}
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+
+.grid_section2 .ico3{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid_section2 .ico3 .icono{
+    border-style: solid;
+    border-color:F4F4F4;
+    color:rgba(0, 145, 202, 0.746);
+    font-size: 60px;
+    padding: 30px 40px;
+}
+
+.grid_section2 .ico3 .icono:hover{
+    color:rgb(0, 183, 255);
+    cursor: pointer;
+}
+
+.grid_section2 .ico3 .ico_descr>h4{
+    font-size: 20px;
+    width: 30%;
+    height: 30px;
+}
+
+.grid_section2 .ico3 .ico_descr>h4:hover{
+    border-bottom:3px solid black;
+    cursor: pointer;
+}
+
+.grid_section2 .ico3 .ico_descr{
+    margin-right: 2%;
+    text-align: left;
+}
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+
+.grid_section2 .ico4{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid_section2 .ico4 .icono{
+    border-style:solid;
+    border-color:F4F4F4;
+    color:rgb(158, 7, 2);
+    font-size: 60px;
+    padding: 30px 40px;
+}
+
+.grid_section2 .ico4 .icono:hover{
+    color:red;
+    cursor: pointer;
+}
+
+.grid_section2 .ico4 .ico_descr{
+    margin-right: 2%;
+    text-align: left;
+}
+
+.grid_section2 .ico4 .ico_descr>h4{
+    font-size: 20px;
+    width: 35%;
+    height: 30px;
+}
+
+.grid_section2 .ico4 .ico_descr>h4:hover{
+    border-bottom:3px solid black;
+    width: 30%;
+    cursor: pointer;
+}
+

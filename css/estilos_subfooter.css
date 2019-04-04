@@ -1,0 +1,172 @@
+.contenedor_grid .sub_footer{
+    grid-area: subfooter;
+}
+
+.sub_footer_grid{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: "marca valoracion contact"
+                        "marca valoracion contact";
+}
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+.sub_footer .marca{
+    grid-area: marca;
+    padding: 20px 30px;
+}
+
+.sub_footer .marca>h2{
+    font-size: 30px;
+    color:#298E43;
+}
+
+.sub_footer .marca>h3{
+    font-size: 20px;
+    margin-top:8%;
+}
+/*-----------------------------------------------------*/
+/*-----------------------------------------------------*/
+/*-----------------------------------------------------*/
+
+.sub_footer .redes{
+    margin-top:5%;
+    padding: 10px 20px;
+}
+
+.contenedor_redes{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.redes .red_ico{
+    border-radius: 50%;
+    margin:auto 20px;
+    padding:10px 10px;
+}
+
+.red_ico>a{
+    color:white;
+}
+
+.redes .red_icof{
+    border-radius: 50%;
+    margin:auto 20px;
+    padding:10px 15px;
+}
+
+.red_icof>a{
+    color:white;
+}
+
+#ico_facebook{
+    background-color:#3b5998 ;
+    color:white; 
+}
+
+#ico_facebook:hover{
+    background-color:black ;
+    cursor: pointer;
+}
+
+#ico_instagram{
+    background-color:#bc2a8d;
+    color:white; 
+}
+
+#ico_instagram:hover{
+    background-color:black;
+    cursor: pointer;
+}
+
+#ico_github{
+    background-color:#211F1F;
+    color:white; 
+}
+
+#ico_github:hover{
+    background-color:black;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+.sub_footer .valoracion{
+    grid-area: valoracion;
+    padding: 10px 50px;
+}
+
+.valoracion>h3{
+    margin-top:5%;
+    font-size: 20px;
+}
+
+.valoracion>P{
+    margin-top:5%;
+    margin-bottom: 10%;
+}
+/*----------------------------------------*/
+
+.valoracion .valora_estrella{
+    font-size: 0;
+    display: inline-block
+}
+
+.valoracion .valora_estrella>a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    color: gray;
+}
+
+.valora_estrella:hover a{
+    color:gold;
+}
+
+.valora_estrella>a:hover ~ a {
+	color: gray;
+}
+
+#star1{
+    color:gold;
+}
+
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+
+.sub_footer .contact{
+    grid-area: contact;
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.contact>h3{
+    margin-top:3%;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+
+.contact .ico_contact{
+    padding:10px;
+    margin-bottom: 2%;
+}
+
+.ico_contact>h5{
+    font-size: 16px;
+}
+
+.ico_contact .icono_c{
+    margin-bottom: 5%;
+    font-size: 25px;
+}
+
+.ico_contact>p{
+    margin-top:0;
+}

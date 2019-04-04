@@ -1,0 +1,30 @@
+@media(max-width:500px){
+
+    .contenedor_grid{
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2,minmax(150px,auto));
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas:
+                            "head head"
+                            "seccion seccion "
+                            "seccion seccion "
+                            "seccion2 seccion2 "
+                            "subfooter subfooter "
+                            "footer footer";
+    }
+
+    .grid_section .acerca_descr{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    /*---------------------------------------------*/
+
+
+
+    /*---------------------------------------------*/
+    .sub_footer_grid{
+       	width: 94%;
+        margin:20px auto;
+    }
+}

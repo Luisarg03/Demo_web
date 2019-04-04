@@ -1,0 +1,166 @@
+@media(max-width:1000px){
+
+    .contenedor_grid{
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2,minmax(auto,auto));
+        grid-template-rows: repeat(6,auto);
+        grid-template-areas:
+                            "head head"
+                            "seccion seccion "
+                            "seccion seccion "
+                            "seccion2 seccion2 "
+                            "subfooter subfooter "
+                            "footer footer";
+    }
+
+    .header .grid_header{
+        display: grid;
+        grid-gap:5px;
+        grid-row-gap: 10px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas:"logo barra"
+                            "titulo titulo"
+                            "descri descri"
+                            "boton boton"
+    }	
+/*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
+
+    .grid_section{
+        margin:20px auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(8,auto);
+        grid-template-areas: "acerca"
+                            "descr"
+                            "art1"
+                            "img1"
+                            "art2"
+                            "img2"
+                            "art3"
+                            "img3";                          
+    }
+
+    .grid_section .cont1{
+        text-align: center;
+    }
+
+    .grid_section .cont2{
+        text-align: center;
+    }
+
+    .grid_section .cont3{
+        text-align: center;
+    }
+
+
+    .boton_ver{
+        display: inline-block;
+    }
+
+
+/*---------------------------------------*/
+/*---------------------------------------*/
+/*---------------------------------------*/
+
+.section2 .grid_section2{
+    display: inline;
+    text-align: center;
+    background-color: F4F4F4;
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows: repeat(5,auto);
+    grid-column-gap: 3%;
+    grid-template-areas:"descr" 
+                        "ico1" 
+                        "ico2"
+                        "ico3" 
+                        "ico4";
+}
+
+
+.grid_section2 .section2_descr{
+    margin-bottom: 0;
+}
+
+.grid_section2 .section2_descr>h4,p{
+    margin-top:2%;
+}
+
+.section2_descr>h4{
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.grid_section2 .ico1{
+    margin-top: 5%;
+}
+
+.grid_section2 .ico1 .icono{
+    padding: 0 40px;
+}
+
+.grid_section2 .ico2{
+    margin-top: 10%;
+}
+
+.grid_section2 .ico2 .icono{
+    padding: 0 40px;
+}
+
+.grid_section2 .ico3{
+    margin-top: 10%;
+}
+
+.grid_section2 .ico3 .icono{
+    padding: 0 40px;
+}
+
+.grid_section2 .ico4{
+    margin-top: 0;
+}
+
+.grid_section2 .ico4 .icono{
+    padding: 0 30px;
+}
+
+/*---------------------------------------*/
+/*---------------------------------------*/
+/*---------------------------------------*/
+
+.sub_footer_grid{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "marca"
+                         "valoracion"
+                         "contact";
+    
+    display:inline-block;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.sub_footer .redes{
+    margin-top:0%;
+}
+
+.valoracion>h3{
+    margin-top:2%;
+}
+
+.valoracion>P{
+    margin-top:2%;
+    margin-bottom: 2%;
+}
+
+.valoracion .valora_estrella{
+    margin-bottom: 5%;
+}
+
+
+}

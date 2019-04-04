@@ -1,0 +1,89 @@
+.grid_header .nav_header{
+    grid-area:barra;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 100%;
+}
+
+.contenedor_btn{
+    display: flex;
+    justify-content: right;
+    -webkit-margin-start: 80%;
+}
+
+.btn-menu{
+    display: none;
+    border-style: solid;
+    border-color:#298E43;
+    border-width: 2px;
+    font-size:40px;
+    width: 50px;
+    height: 50px;
+    padding: 2px 6px;
+    color:#298E43;
+    background-color:#262626;
+}
+
+.menu{
+    color:#298E43;
+    background-color: #262626;
+    margin-top:5%;
+}
+
+.item_menu{
+    width: 65%;
+    text-decoration: none;
+    color:#298E43;
+    display:flex;
+    border-style:solid;
+    border-color:rgb(41, 142, 67);
+    border-width: 2px;
+    padding: 10px 20px;
+    font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.2s;
+}
+
+.item_menu:hover{
+    background-color: rgb(0, 0, 0,0.6);
+}
+
+/*-----------------Menu escritorio-----------------------*/
+.contenedor_menu{
+    display: flex;
+    justify-content: right;
+    -webkit-margin-start: 30%;
+}
+
+.menu_desk{
+    display: flex;
+    color:#298E43;
+    background-color: #262626;
+    height: 45px;
+}
+
+.item_menu_desk{
+    text-decoration: none;
+    color:#298E43;
+    display:flex;
+    padding: 5px 15px;
+    font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.2s;
+}
+
+.item_menu_desk:hover{
+    background-color: rgb(0, 0, 0,0.6);
+    border-bottom: solid 3px;
+    border-color:rgb(41, 142, 67);
+    cursor: pointer;
+}
+
+@media(max-width:1000px){
+
+    .menu_desk{
+        display: none;
+    }
+
+    .btn-menu{
+        display: flex;

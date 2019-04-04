@@ -1,0 +1,175 @@
+.contenedor_grid .section{
+    grid-area: seccion;
+}
+
+.grid_section{
+    margin:20px auto;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: "acerca acerca"
+                        "descr descr"
+                        " img1 art1"
+                        " art2 img2 "
+                        " img3 art3";
+}
+
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
+.grid_section .acerca{
+   grid-area: acerca;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   font-size: 30px;
+   margin-top:5%;
+   margin-bottom: 1%;
+   color:#298E43;
+}
+
+.grid_section .acerca_descr{
+   grid-area:descr;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   font-size: 18px;
+   margin-bottom: 5%;
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
+.centrado{
+    display: flex;
+    justify-content: center;
+}
+
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
+.grid_section .img1{
+    grid-area: img1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.grid_section .img1>img:hover{
+    border-style: solid;
+    border-width: 4px;
+    border-color:#298E43;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.grid_section .cont1{
+    grid-area: art1;
+    display: inline;
+    width: 80%;
+    margin-bottom: 10%;
+}
+
+.cont1 .subtitulo{
+    height: 50px;
+}
+
+.cont1 .subtitulo>h2:hover{
+    border-bottom:3px solid #262626;
+    width: 100%;
+    cursor: pointer;
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
+.grid_section .img2{
+    grid-area: img2;
+    display: flex;
+    justify-content:center;
+    margin-bottom: 10%;
+}
+
+.grid_section .img2>img:hover{
+    border-style: solid;
+    border-width: 4px;
+    border-color:#298E43;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.grid_section .cont2{
+    grid-area: art2;
+    display: inline;
+    width: 80%;
+    margin-bottom: 10%;
+}
+
+.cont2 .subtitulo{
+    height: 50px;
+}
+
+.cont2 .subtitulo>h2:hover{
+    border-bottom:3px solid #262626;
+    width: 100%;
+    cursor: pointer;
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
+.grid_section .img3{
+    grid-area: img3;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.grid_section .img3>img:hover{
+    border-style: solid;
+    border-width: 4px;
+    border-color:#298E43;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.grid_section .cont3{
+    grid-area: art2;
+    display: inline;
+    width: 80%;
+    margin-bottom: 10%;
+}
+
+.cont3 .subtitulo{
+    height: 50px;
+}
+
+.cont3 .subtitulo>h2:hover{
+    border-bottom:3px solid #262626;
+    width: 100%;
+    cursor: pointer;
+} 
+
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
+.boton_ver{
+    width: 25%;
+    background-color: #262626;
+    color:white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding:10px;
+    box-shadow: 5px 5px 10px 1px rgba(38,38,38,0.75);
+    margin-top:10%;
+}
+
+.boton_ver:hover{
+    cursor: pointer;
+    color:#298E43;
+    background-color: white;
+    transition: all 0.3s;
+}
